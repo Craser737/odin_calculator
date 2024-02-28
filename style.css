@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Borders for layout. Delete after */
+body,
+#header,
+#screen,
+#lcd,
+.col,
+#solarSect,
+#solar,
+.solCell,
+#body {
+    border: 1px solid red;
+}
+body {
+    width: 500px;
+    height: auto;
+}
+
+#header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: silver;
+}
+
+#screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(163, 163, 163);
+}
+
+#lcd {
+    width: 310px;
+    height: 50px;
+    flex: auto;
+    background-color: white;
+}
+
+#solarSect {
+    display: flex;
+    width: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#solar {
+    display: flex;
+}
+
+.solCell {
+    flex: auto;
+    height: 70px;
+    width: 70px;
+}
+
+#body {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 500px;
+    padding: 40px 40px 50px 40px;
+}
+
+.col {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 10px;
+    flex: 1;
+}
