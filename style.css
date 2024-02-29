@@ -7,28 +7,21 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/* Borders for layout. Delete after */
-body,
-#header,
-#screen,
-#lcd,
-.col,
-#solarSect,
-#solar,
-.solCell,
-#body {
-    border: 1px solid red;
-}
-body {
+
+#calc {
     width: 500px;
     height: auto;
+    background-image: url(./images/stainSteel.jpeg);
+    background-size: cover;
+    border: 1px solid rgb(119, 116, 116);
+    border-radius: 20px;
+
 }
 
 #header {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: silver;
 }
 
 #screen {
@@ -44,7 +37,7 @@ body {
     width: 310px;
     height: 50px;
     flex: auto;
-    background-color: white;
+    background: linear-gradient(135deg, white, rgba(247, 244, 244, 0.733) 90%);
 }
 
 #solarSect {
@@ -52,7 +45,9 @@ body {
     width: auto;
     height: 100px;
     align-items: center;
+    border: 1px solid rgb(83, 80, 80);
     justify-content: space-around;
+    background: linear-gradient(to left, rgb(122, 69, 25), rgba(126, 76, 60, 0.733), rgb(122, 69, 25));
 }
 
 #solar {
@@ -63,6 +58,8 @@ body {
     flex: auto;
     height: 70px;
     width: 70px;
+    border: 2px solid rgba(15, 7, 6, 0.377);
+    background: linear-gradient( to right bottom, rgba(63, 24, 18, 0.377) 20%, rgb(63, 24, 18));
 }
 
 #body {
@@ -82,4 +79,11 @@ body {
 button {
     margin: 10px;
     flex: 1;
+    border: 2px solid rgb(22, 22, 22);
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-radius: 15px;
+    background: linear-gradient(to right, rgb(238, 233, 233), rgb(207, 202, 202));
+    background-position: 10% 25%;
 }
+    
