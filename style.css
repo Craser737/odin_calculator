@@ -100,7 +100,8 @@ html {
 
 button {
     margin: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: sans-serif;
+    color: black;
     font-size: 26px;
     flex: 1;
     border: 2px solid rgb(22, 22, 22);
