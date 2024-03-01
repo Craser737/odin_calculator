@@ -78,7 +78,9 @@ function eventSwitch(event) {
             numBtn(0);
             break;
         case '.':
-            numBtn('.');
+            if (!number.includes('.')) {
+                numBtn('.');
+            }
             break;
         case 'del':
             number = number.slice(0, -1);
