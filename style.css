@@ -38,14 +38,16 @@ html {
     align-items: center;
     margin: 30px;
     padding: 20px;
-    background-color: rgb(163, 163, 163);
+    background: linear-gradient(to right, rgb(187, 182, 182) 90%, rgb(185, 179, 179));
+    border: 1px solid rgb(83, 80, 80);
 }
 
 #lcd {
     width: 310px;
     height: 50px;
     flex: auto;
-    background: linear-gradient(135deg, white, rgba(247, 244, 244, 0.733) 90%);
+    border: 1px solid rgb(83, 80, 80);
+    background: linear-gradient(135deg, white, 60%, rgba(247, 244, 244, 0.733));
     display: flex;
     align-items: center;
     padding: 0px 20px;
@@ -99,7 +101,7 @@ html {
 button {
     margin: 10px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
+    font-size: 26px;
     flex: 1;
     border: 2px solid rgb(22, 22, 22);
     border-bottom-width: 3px;

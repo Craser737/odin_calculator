@@ -19,16 +19,20 @@ const plusMinus = document.querySelector('#plusMinus');
 const percent = document.querySelector('#percent');
 const equal = document.querySelector('#enter');
 const display = document.querySelector('#display');
-const calc = document.querySelector('#calc');
+const body = document.querySelector('#body');
+const column = document.querySelector('.col');
 let number = '';
 let numArray = [];
 let operator = '';
 let screenClear = false;
 
-document.addEventListener('click', (e) => {
+body.addEventListener('click', (e) => {
+    if (e.target.nodeName === 'BUTTON') {
     const event = e.target.textContent;
     eventSwitch(event);
+    console.log(e.target.textContent);
     e.target.blur();
+}
 });
 document.addEventListener('keydown', (e) => {
     const keyEvent = e.key;
@@ -88,6 +92,9 @@ function eventSwitch(event) {
         case 'x':
             operation('*');
             break;
+        case '\u00F7':
+            operation('/');
+            break;
         case '/':
             operation('/');
             break;
@@ -115,10 +122,10 @@ function eventSwitch(event) {
             break;
     }    
     
-    if (event ==='Delete' || event === 'AC') {
+    if (number === '') {
         display.textContent = '0';
     } else {
-        display.textContent = number;
+        display.textContent = number.slice(0, 12);
     }
 };
 
@@ -137,6 +144,9 @@ function numBtn(num) {
 }
 
 function operation(oper) {
+    if (!number) {
+        number = '0';
+    };
     numArray.push(number);
     screenClear = true;
     operator = oper;
@@ -162,3 +172,4 @@ function enter() {
     numArray = [];
     screenClear = true;
 }
+
